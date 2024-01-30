@@ -765,6 +765,9 @@ nav {
 }
 
 @media (max-width: 450px){
+  .home-banner-container{
+    padding-top: 0;
+  }
   .carousel{
     max-height: 200px;
   }
