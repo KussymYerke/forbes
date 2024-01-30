@@ -73,7 +73,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <Navbar />
-      <div className="home-banner-container">
+      <div id="hero" className="home-banner-container">
         <div className="left">
           <div className="carousel">
             <Slider {...settings} className="slider">

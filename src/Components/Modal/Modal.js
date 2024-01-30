@@ -203,7 +203,7 @@ export default function Modal() {
                     </ul>
                 </div>
                 <div className="company-content">
-                    <img src={Logo18}/>
+                    <img src={Logo18} width={'281px'}/>
                     <div className="company-text">
                     <h1 className="company-title">St Regis Astana</h1>
                     <p className="company-description">Скидка 10% на всю сеть ресторанов</p>

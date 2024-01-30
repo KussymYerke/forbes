@@ -32,11 +32,15 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+.navLink{
+  text-decoration: none;
+  color: black;
+}
 .navbar-menu-container {
   display: none;
 }
 .navbar-links-container a {
-  margin-right: 3rem;
+  margin-right: 1.5rem;
   text-decoration: none;
   color: white;
   font-size: 1rem;
@@ -541,9 +545,21 @@ nav {
     width: 450px;
     height: 250px;
   }
+  .navbar-links-container a {
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 1083px) {
+  .logo{
+    width: 250px;
+  }
+
+  .navbar-links-container a {
+    margin-right: 0.7rem;
+    font-size: 0.7rem;
+  }
 
   .carousel{
     width:70vw;
@@ -565,10 +581,6 @@ nav {
   }
   .member-heading{
     margin-top: 7rem;
-  }
-  .navbar-links-container a {
-    margin-right: 1rem;
-    font-size: 1rem;
   }
   .primary-button {
     font-size: 1rem;
@@ -599,6 +611,10 @@ nav {
 
 }
 @media (max-width: 800px) {
+  .navbar-links-container a {
+    margin-right: 0.6rem;
+    font-size: 0.7rem;
+  }
   .carousel{
     max-height: 270px;
   }

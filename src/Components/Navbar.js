@@ -24,26 +24,32 @@ const Navbar = () => {
     {
       text: "MediaKit",
       icon: <HomeIcon />,
+      id: {File}
     },
     {
       text: "Forbes Woman Club",
       icon: <InfoIcon />,
+      id: '#hero'
     },
     {
       text: "Привилегии",
       icon: <CommentRoundedIcon />,
+      id: '#priveleges'
     },
     {
       text: "Мероприятия  ",
       icon: <PhoneRoundedIcon />,
+      id: '#events',
     },
     {
       text: "Анкета",
       icon: <ShoppingCartRoundedIcon />,
+      id: "#form"
     },
     {
       text: "О команде",
       icon: <ShoppingCartRoundedIcon />,
+      id: "#team"
     }
   ];
   return (
@@ -55,18 +61,18 @@ const Navbar = () => {
       </div>
       <div className="navbar-links-container">
         <a href={File} download >MediaKit</a>
-        <a href="">Forbes Woman Club</a>
-        <a href="">Привилегии</a>
-        <a href="">Мероприятия</a>
-        <a href="">Анкета</a>
-        <a href="">О команде</a>
+        <a href="#hero">Forbes Woman Club</a>
+        <a href="#priveleges">Привилегии</a>
+        <a href="#events">Мероприятия</a>
+        <a href="#form">Анкета</a>
+        <a href="#team">О команде</a>
       </div>
       <div className="navbar-menu-container">
-        <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+        <HiOutlineBars3 style={{color: 'white'}}onClick={() => setOpenMenu(true)} />
       </div>
-      <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
+      <Drawer style={{color: 'white'}}open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
         <Box
-          sx={{ width: 250 }}
+          sx={{ width: 250}}
           role="presentation"
           onClick={() => setOpenMenu(false)}
           onKeyDown={() => setOpenMenu(false)}
@@ -74,10 +80,14 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
+                <a className={"navLink"}href={item.id}>
                 <ListItemButton>
+                  
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
+                  
                 </ListItemButton>
+                </a>
               </ListItem>
             ))}
           </List>
