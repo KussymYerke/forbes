@@ -1,0 +1,75 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal, .overlay {
+    width: 130vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 1200px;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.company-content{
+    max-width: 330px;
+    margin-bottom: 40px;
+}
+.company-img{
+    display: flex;
+    align-items: flex-start;
+    height: 300px;
+}
+.company-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.company-title{
+    font-size: 1.5rem;
+}
+.company-description{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+}
+.modal-lower{
+    display: flex;
+}
+.comp-description{
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 90%;
+}
