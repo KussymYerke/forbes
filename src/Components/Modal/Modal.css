@@ -74,34 +74,3 @@ body.active-modal {
     width: 90%;
 }
 
-@media (max-width: 1343px){
-    img{
-        width: calc(200px);
-        align-self: center;
-    }
-    .company-text{
-        align-items: start;
-    }
-    .company-content{
-        width: 300px;
-    }
-    .company-description{
-        text-align: start;
-    }
-}
-
-@media (max-width: 1226px){
-    .modal-content{
-        justify-content: center;
-        gap: 1rem;
-    }
-    .comp-description{
-        font-size:1rem;
-    }
-}
-
-@media (max-width: 856px){
-    .company-content{
-        width: 220px;   
-    }
-}
