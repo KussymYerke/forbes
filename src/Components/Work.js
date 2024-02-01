@@ -15,7 +15,7 @@ const Work = () => {
 
   return (
     
-    <div className="work-section-wrapper">
+    <div className="work-section-wrapper font-link">
       <div className="gallery-upper">
           <img src={Gallery1} alt="gallery-first" width={"30%"}/>
         <div className="gallery-right"> 

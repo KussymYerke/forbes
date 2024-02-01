@@ -4,8 +4,8 @@ import Modal from "./Modal/Modal";
 const Events = () => {
   return (
     <div id="events" className="event-wrapper">
-      <h1 className="event-heading">Календарь мероприятий</h1>
-      <div className="events">
+      <h1 className="event-heading font-head">Календарь мероприятий</h1>
+      <div className="events font-link">
         <div className="event" data-aos="fade-up" data-aos-once="true">
             <div className="event-title">Бизнес-бранчи</div>
             <div className="event-details">
@@ -34,7 +34,7 @@ const Events = () => {
                 <div className="event-place">г.Астана, г.Алматы</div>
             </div>
         </div> 
-        <div id="form" className="event-club">
+        <div id="form" className="event-club font-link">
             <Modal/>
         </div>
       </div>

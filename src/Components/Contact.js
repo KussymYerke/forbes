@@ -6,13 +6,13 @@ import Article3 from '../Assets/article-3.jpeg'
 const Contact = () => {
   return (
     <div className="contact-page-wrapper">
-      <div className="articles">
+      <div className="articles font-link">
       <div className="wrapper">
         <div className="image">
           <img src={Article1} width={"100%"} height={"33%"} alt="article"/>
           <div className="content">
             <div className="article-info">
-              <div className="content-title">Forbes Woman Club 2021</div>
+              <div className="content-title">Forbes Woman Club 2019</div>
               <a className="content-button" href="https://forbes.kz/woman/forbes_woman_club_priglasil_marian_zaltsman/">Прочитать статью</a>
             </div>
           </div>
