@@ -21,7 +21,7 @@ body {
   background-color: #f6f6f6;
 }
 .wrapper{
-  width: 100%;
+  width: 30%;
   margin-bottom: 5rem;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
 }
 .content{
   width: 100%;
-  height: 100%;
+  height: 98%;
   top:0;
   left:0;
   position: absolute;
@@ -50,9 +50,9 @@ body {
   opacity: 1;
 }
 .content-title{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .content-button{
   font-size: 19px;
@@ -305,6 +305,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  max-height: 200px;
 }
 .article{
   margin-bottom: 2rem;
@@ -604,6 +605,12 @@ nav {
 }
 
 @media (max-width: 1250px) {
+  .content-title{
+      font-size: 1.2rem;
+  }
+  .content-button{
+      font-size: 1rem;
+  }
   .privellege-img{
       width: 450px;
   }
@@ -642,7 +649,21 @@ nav {
     margin-right: 0.7rem;
     font-size: 0.7rem;
   }
-
+  .content{
+    justify-content: start;
+  }
+  .content-title{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+  }
+  .content-button{
+      font-size: 0.6rem;
+      padding: 0.7rem 1rem;
+  }
+  .articles{
+    max-height: 150px;
+  }
   .carousel{
     width:70vw;
     height:25vh;
@@ -721,6 +742,18 @@ nav {
   }
   .carousel{
     max-height: 170px;
+  }
+  .content-title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 0.6rem;
+  }
+  .articles{
+    max-height: 80px;
+  }
+  .content-button{
+      font-size: 0.4rem;
+      padding: 0.5rem 0.8rem;
   }
   .slick-next{
     right: 5% !important;
@@ -822,11 +855,30 @@ nav {
     font-size: 20px !important;
     padding: 3px 10px 10px 10px;
   }
+  .articles{
+    max-height: 40px;
+  }
   .slick-prev:before{
     font-size: 20px !important;
     padding: 3px 10px 10px 10px;
   }
-
+  .journal{
+    width: 13vw;
+    height: 15vh;
+  }
+  .content{
+    padding-left: 1rem;
+    height: 97%;
+  }
+  .content-title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 0.5rem;
+  }
+  .content-button{
+      font-size: 0.3rem;
+      padding: 0.5rem 1rem;
+  }
   .home-bannerImage-container,
   .about-background-image-container {
     display: none;
@@ -835,7 +887,7 @@ nav {
     padding-right: 1rem
   }
   .member-head{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .contact-page-wrapper{
     margin-bottom: 0;
@@ -871,6 +923,9 @@ nav {
     font-size: 0.6rem;
     padding: 0.5rem 0.7rem
   }
+  .gallery-img{
+    margin-right: 1rem;
+  }
   .event-title{
     font-size: 1.5rem;
   }
@@ -900,7 +955,7 @@ nav {
     height: 150px;
   }
   .member{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     max-width: 150px;
   }
   .privellege-img{
@@ -916,9 +971,14 @@ nav {
 
 @media (max-width: 450px){
   .member{
-    font-size: 0.5rem;
-    max-width: 150px;
+    font-size: 0.45rem;
+    max-width: 120px;
   }
+
+  .articles{
+    max-height: 20px;
+  }
+
   .logo{
     width: 200px;
   }
@@ -930,7 +990,11 @@ nav {
     padding-top: 0;
   }
   .carousel{
-    max-height: 100px;
+    max-height: 150px;
+  }
+  .journal{
+    width: 13vw;
+    height: 12vh;
   }
   .about-heading{
     font-size: 2.5rem;
@@ -943,7 +1007,7 @@ nav {
     margin-bottom: 3rem;
   }
   .member-head{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   .about-subheading{
     width: 150px;
@@ -954,6 +1018,18 @@ nav {
   }
   .about-subheading:last-child{
     margin-top: 15px;
+  }
+  .content{
+    padding-left: 0.5rem;
+    height: 95%;
+  }
+  .content-title{
+    margin-bottom:0px;
+    font-size: 0.4rem;
+  }
+  .content-button{
+      font-size: 0.4rem;
+      padding: 0.3rem 0.7rem;
   }
   .gallery-img{
     margin-right: 1rem;
@@ -1018,5 +1094,26 @@ nav {
   }
   .footer-lower{
     gap: 3rem;
+  }
+  .member-head{
+    font-size: 1.3rem;
+  }
+  .gallery-img{
+    margin-right: 0.5rem;
+  }
+  .member{
+    font-size: 0.4rem;
+  }
+  .content{
+    padding-left: 0.5rem;
+    height: 95%;
+  }
+  .content-title{
+    margin-bottom:0px;
+    font-size: 0.35rem;
+  }
+  .content-button{
+      font-size: 0.3rem;
+      padding: 0.3rem 0.5rem;
   }
 }
