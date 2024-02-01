@@ -11,7 +11,8 @@ import Catalogue2 from './../Assets/ef68be70ea06f35f87212adb4bcc71b2-small.jpg'
 import Catalogue3 from './../Assets/ef68be70ea06f35f87212adb4bcc71b2-small.jpg'
 import Catalogue4 from './../Assets/ef68be70ea06f35f87212adb4bcc71b2-small.jpg'
 import Catalogue5 from './../Assets/ef68be70ea06f35f87212adb4bcc71b2-small.jpg'
-import journal from './../Assets/Rectangle 32.png'
+import Journal1 from './../Assets/cover1.jpg'
+import Journal2 from './../Assets/cover2.jpg'
 
 const Home = () => {
 
@@ -84,7 +85,8 @@ const Home = () => {
           </div>
         </div>
         <div className="right">
-            <img className="journal" src={journal}/>
+            <img className="journal" src={Journal1}/>
+            <img className="journal" src={Journal2}/>
         </div>
       </div>
     </div>
