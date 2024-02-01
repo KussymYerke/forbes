@@ -6,11 +6,11 @@ import { FiArrowRight } from "react-icons/fi";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Catalogue1 from './../Assets/catalogue-1.jpeg'
-import Catalogue2 from './../Assets/catalogue-2.jpeg'
-import Catalogue3 from './../Assets/catalogue-3.jpeg'
-import Catalogue4 from './../Assets/catalogue-4.jpeg'
-import Catalogue5 from './../Assets/catalogue-5.jpeg'
+import Catalogue1 from './../Assets/9dea36e79965ae96676088f6bf8e8e7d-small.jpg'
+import Catalogue2 from './../Assets/ef68be70ea06f35f87212adb4bcc71b2-small.jpg'
+import Catalogue3 from './../Assets/ef68be70ea06f35f87212adb4bcc71b2-small.jpg'
+import Catalogue4 from './../Assets/ef68be70ea06f35f87212adb4bcc71b2-small.jpg'
+import Catalogue5 from './../Assets/ef68be70ea06f35f87212adb4bcc71b2-small.jpg'
 import journal from './../Assets/Rectangle 32.png'
 
 const Home = () => {

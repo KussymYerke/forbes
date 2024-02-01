@@ -20,22 +20,22 @@ const Work = () => {
           <img src={Gallery1} alt="gallery-first" width={"30%"}/>
         <div className="gallery-right"> 
         <div className="scroll">
-          <div className="RightToLeft" data-aos="fade-left">
+          <div className="RightToLeft" data-aos="fade-left" data-aos-once="true">
             <p>Бизнес–лидерство;</p>
           </div>
-          <div className="RightToLeft" data-aos="fade-left">
+          <div className="RightToLeft" data-aos="fade-left" data-aos-delay="100" data-aos-once="true">
             <p>Медийное <span className="p-margin"  >влияние;</span></p>
           </div>
-          <div className="RightToLeft" data-aos="fade-left">
+          <div className="RightToLeft" data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
             <p>Предпринимательский</p>
           </div>
-          <div className="RightToLeft" data-aos="fade-left">
+          <div className="RightToLeft" data-aos="fade-left" data-aos-delay="300" data-aos-once="true">
             <p>дух; <span className="p-margin">Общественная</span></p>
           </div>
-          <div className="RightToLeft" data-aos="fade-left">
+          <div className="RightToLeft" data-aos="fade-left" data-aos-delay="400" data-aos-once="true">
             <p>активность;</p>
           </div>
-          <div className="RightToLeft" data-aos="fade-left">
+          <div className="RightToLeft" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
             <p>Искусство и культура</p>
           </div>
         </div>
