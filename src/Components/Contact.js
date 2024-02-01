@@ -11,22 +11,33 @@ const Contact = () => {
               <a href="https://forbes.kz/woman/forbes_woman_club_priglasil_marian_zaltsman/">
                 <img src={Article1} width={"100%"} height={"33%"} alt="article"/>
               </a>
-            <div className="article-title">Forbes Woman Club 2021</div>
-            <a className="article-button" href="https://forbes.kz/woman/forbes_woman_club_priglasil_marian_zaltsman/">Прочитать статью</a>
+              <div className="article-title">Forbes Woman Club 2021</div>
+              <a className="article-button" href="https://forbes.kz/woman/forbes_woman_club_priglasil_marian_zaltsman/">Прочитать статью</a>
           </div>
         <div className="article">
             <a href="https://forbes.kz/woman/forbes_woman_club_2022_kak_nayti_sebya_v_biznese/">
               <img src={Article2} width={"100%"} height={"33%"} alt="article" />
               </a>
-          <div className="article-title">Forbes Woman Club 2022</div>
-          <a className="article-button" href="https://forbes.kz/woman/forbes_woman_club_2022_kak_nayti_sebya_v_biznese/">Прочитать статью</a>
+            <div className="article-title">Forbes Woman Club 2022</div>
+            <a className="article-button" href="https://forbes.kz/woman/forbes_woman_club_2022_kak_nayti_sebya_v_biznese/">Прочитать статью</a>
         </div>
         <div className="article">
             <a href="https://forbes.kz/woman/tsifrovizatsiya_i_liderstvo_chto_obsujdali_na_forbes_woman_club_2023/">
              <img src={Article3} width={"100%"} height={"33%"} alt="article"/>
             </a>
-          <div className="article-title">Forbes Woman Club 2023</div>
-          <a className="article-button" href="#https://forbes.kz/woman/tsifrovizatsiya_i_liderstvo_chto_obsujdali_na_forbes_woman_club_2023/">Прочитать статью</a>
+            <div className="article-title">Forbes Woman Club 2023</div>
+            <a className="article-button" href="#https://forbes.kz/woman/tsifrovizatsiya_i_liderstvo_chto_obsujdali_na_forbes_woman_club_2023/">Прочитать статью</a>
+        </div>
+      </div>
+      <div className="wrapper">
+        <div className="image">
+          <img src={Article3} width={"100%"} height={"33%"} alt="article"/>
+          <div className="content">
+            <div className="article-info">
+              <div className="content-title">Forbes Woman Club 2023</div>
+              <a className="content-button" href="#https://forbes.kz/woman/tsifrovizatsiya_i_liderstvo_chto_obsujdali_na_forbes_woman_club_2023/">Прочитать статью</a>
+            </div>
+          </div>
         </div>
       </div>
       <div className="videos">

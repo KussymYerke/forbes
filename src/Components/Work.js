@@ -3,31 +3,39 @@ import Gallery1 from "../Assets/gallery-1.png";
 import Gallery2 from "../Assets/gallery-2.png";
 import Gallery3 from "../Assets/gallery03.png";
 import Gallery4 from "../Assets/gallery-4.png"
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Work = () => {
   
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
+    
     <div className="work-section-wrapper">
       <div className="gallery-upper">
           <img src={Gallery1} alt="gallery-first" width={"30%"}/>
         <div className="gallery-right"> 
         <div className="scroll">
-          <div className="RightToLeft">
+          <div className="RightToLeft" data-aos="fade-left">
             <p>Бизнес–лидерство;</p>
           </div>
-          <div className="RightToLeft">
-            <p>Медийное <span className="p-margin">влияние;</span></p>
+          <div className="RightToLeft" data-aos="fade-left">
+            <p>Медийное <span className="p-margin"  >влияние;</span></p>
           </div>
-          <div className="RightToLeft">
+          <div className="RightToLeft" data-aos="fade-left">
             <p>Предпринимательский</p>
           </div>
-          <div className="RightToLeft">
+          <div className="RightToLeft" data-aos="fade-left">
             <p>дух; <span className="p-margin">Общественная</span></p>
           </div>
-          <div className="RightToLeft">
+          <div className="RightToLeft" data-aos="fade-left">
             <p>активность;</p>
           </div>
-          <div className="RightToLeft">
+          <div className="RightToLeft" data-aos="fade-left">
             <p>Искусство и культура</p>
           </div>
         </div>

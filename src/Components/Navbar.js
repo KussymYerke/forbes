@@ -18,6 +18,7 @@ import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import File from './../Assets/ForbesFile.pdf'
 
+
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
@@ -54,47 +55,45 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <div className="container">
+      <div className="nav">
         <div className="nav-inner">
-        <div className="nav-logo-container">
-        <img className="logo" src={Logo} alt="" />
-      </div>
-      <div className="navbar-links-container">
-        <a href={File} download >MediaKit</a>
-        <a href="#hero">Forbes Woman Club</a>
-        <a href="#priveleges">Привилегии</a>
-        <a href="#events">Мероприятия</a>
-        <a href="#form">Анкета</a>
-        <a href="#team">О команде</a>
-      </div>
-      <div className="navbar-menu-container">
-        <HiOutlineBars3 style={{color: 'white'}}onClick={() => setOpenMenu(true)} />
-      </div>
-      <Drawer style={{color: 'white'}}open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
-        <Box
-          sx={{ width: 250}}
-          role="presentation"
-          onClick={() => setOpenMenu(false)}
-          onKeyDown={() => setOpenMenu(false)}
-        >
-          <List>
-            {menuOptions.map((item) => (
-              <ListItem key={item.text} disablePadding>
-                <a className={"navLink"}href={item.id}>
-                <ListItemButton>
-                  
-                  <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.text} />
-                  
-                </ListItemButton>
-                </a>
-              </ListItem>
-            ))}
-          </List>
-          <Divider />
-        </Box>
-      </Drawer>
+            <img className="logo" src={Logo} alt="" />
+            <div className="navbar-links-container">
+              <a href={File} target="blank">MediaKit</a>
+              <a href="#hero">Forbes Woman Club</a>
+              <a href="#priveleges">Привилегии</a>
+              <a href="#events">Мероприятия</a>
+              <a href="#form">Анкета</a>
+              <a href="#team">О команде</a>
+            </div>
         </div>
+        <div className="navbar-menu-container">
+          <HiOutlineBars3 style={{color: 'white'}}onClick={() => setOpenMenu(true)} />
+        </div>
+        <Drawer style={{color: 'white'}}open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
+          <Box
+            sx={{ width: 250}}
+            role="presentation"
+            onClick={() => setOpenMenu(false)}
+            onKeyDown={() => setOpenMenu(false)}
+          >
+            <List>
+              {menuOptions.map((item) => (
+                <ListItem key={item.text} disablePadding>
+                  <a className={"navLink"}href={item.id}>
+                  <ListItemButton>
+                    
+                    <ListItemIcon>{item.icon}</ListItemIcon>
+                    <ListItemText primary={item.text} />
+                    
+                  </ListItemButton>
+                  </a>
+                </ListItem>
+              ))}
+            </List>
+            <Divider />
+          </Box>
+        </Drawer>
       </div>
     </nav>
   );
