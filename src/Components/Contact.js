@@ -41,8 +41,8 @@ const Contact = () => {
         </div>
       </div>
       <div className="videos">
-        <iframe className="video"  src="https://www.youtube.com/watch?v=UDZAllm970c&feature=youtu.be" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe className="video" src="https://www.youtube.com/watch?v=7-wY-nBUYZs&feature=youtu.be" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe className="video"  src="https://www.youtube.com/embed/UDZAllm970c?si=JOOtgt-yhSLMxFSq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe className="video" src="https://www.youtube.com/embed/7-wY-nBUYZs?si=uvVPyqJIQWHaWrkr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
   );
