@@ -47,6 +47,7 @@ export default function Modal() {
                 />
                 <label>Дата рождения</label>
                 <input type="date" />
+                <label>Место проживания</label>
                 <select>
                   <option value="Almaty">Алматы</option>
                   <option value="Astana">Астана</option>
@@ -62,7 +63,7 @@ export default function Modal() {
                 <input type="text" />
                 <label>Какие темы Вы считаете интересными для обсуждения на встречах Forbes Woman Club?</label>
                 <input type="text" />
-                <button>Add Blog</button>
+                <button>Отправить</button>
               </form>
             </div>
           </div>

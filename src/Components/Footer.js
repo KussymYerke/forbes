@@ -1,9 +1,7 @@
 import React from "react";
-import Logo from "../Assets/Logo.svg";
-import { BsTwitter } from "react-icons/bs";
-import { SiLinkedin } from "react-icons/si";
-import { BsYoutube } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import Insta from './../Assets/instagram.png'
+import Telega from './../Assets/telegram.png'
+import WhatsApp from './../Assets/whatsapp.png'
 
 const Footer = () => {
   return (
@@ -36,6 +34,11 @@ const Footer = () => {
           <li>Зульфия Хайбуллина</li>
           <li>zulfiya@forbes.kz</li>
         </ul>
+      </div>
+      <div className="footer-lower-social">
+        <img src={Insta} className="social" alt="" />
+        <img src={Telega} className="social"  alt="" />
+        <img src={WhatsApp} className="social"  alt="" />
       </div>
       </div>
     </div>

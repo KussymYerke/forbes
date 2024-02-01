@@ -402,6 +402,10 @@ nav {
   flex-direction: column;
   text-align: center;
 }
+.social{
+  width: 32px;
+  height: 32px;
+}
 .testimonial-section-bottom {
   margin: 2rem auto;
 }
@@ -593,8 +597,13 @@ nav {
 }
 .footer-lower{
   display: flex;
-  gap: 11rem;
-  padding-bottom: 8.375rem;
+  gap: 11rem; 
+  padding-bottom: 3rem;
+}
+.footer-lower-social{
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
 }
 .footer-single li{
   list-style: none;

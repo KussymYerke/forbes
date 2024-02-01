@@ -15,9 +15,9 @@ const Events = () => {
         <h1 className="member-head">Члены Forbes Woman Club</h1>
       </div>
       <div className="member-list">
-        <div className="member" data-aos="fade-up">Участницы рейтингов Forbes Kazakhstan</div>
-        <div className="member" data-aos="fade-up">Успешные предпринимательницы</div>
-        <div className="member" data-aos="fade-up">Топ-менеджеры крупных компаний</div>
+        <div className="member" data-aos="fade-up" data-aos-once='true'>Участницы рейтингов Forbes Kazakhstan</div>
+        <div className="member" data-aos="fade-up" data-aos-once='true'>Успешные предпринимательницы</div>
+        <div className="member" data-aos="fade-up" data-aos-once='true'>Топ-менеджеры крупных компаний</div>
       </div>
     </div>
   );
