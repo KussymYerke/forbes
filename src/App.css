@@ -592,6 +592,9 @@ nav {
   border-radius: 3rem;
   text-decoration: none;
 }
+.event-button:hover{
+  background-color: #CE1B1B;
+}
 .footer{
   background-color: #1B1A1A;
   color: #fff;

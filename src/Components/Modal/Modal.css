@@ -106,6 +106,9 @@ input:focus::placeholder {
     transition: 0.2s all;
     color: transparent;
 }
+.input__container label{
+    margin-left: 0.5rem;
+}
 
 textarea:focus::placeholder {
     transition: 0.2s all;

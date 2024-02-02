@@ -36,22 +36,29 @@ export default function Modal() {
                   <input type="text" id="name" name="name" required placeholder="ФИО"/>
                 </div>
                 <div class="input__container">
-                  <input type="email" id="email" name="email" required placeholder="Название компании" />
-                </div>
-                <div class="input__container">
-                  <input type="email" id="email" name="email" required placeholder="Сфера деятельности (чем занимается компания)" />
-                </div>
-                <div class="input__container">
-                  <input type="email" id="email" name="email" required placeholder="Должность" />
-                </div>
-                <div class="input__container">
-                  <input type="email" id="email" name="email" required placeholder="Телефон" />
-                </div>
-                <div class="input__container">
                   <input type="email" id="email" name="email" required placeholder="Email" />
                 </div>
                 <div class="input__container">
-                  <textarea id="message" name="message" rows="4" required placeholder="Комментарий"></textarea>
+                  <input type="number" id="email" name="email" required placeholder="Номер телефона" />
+                </div>
+                <div class="input__container">
+                  <label>Дата рождения</label>
+                  <input type="date" id="email" name="email" required placeholder="Дата рождения" />
+                </div>
+                <div class="input__container">
+                  <input type="text" id="email" name="email" required placeholder="Местро проживания (Город)" />
+                </div>
+                <div class="input__container">
+                  <input type="text" id="email" name="email" required placeholder="Сфера деятельности" />
+                </div>
+                <div class="input__container">
+                  <input type="text" id="email" name="email" required placeholder="Должность" />
+                </div>
+                <div class="input__container">
+                  <input type="text" id="email" name="email" required placeholder="Никнейм в социальных сетях (свой/бизнеса)" />
+                </div> 
+                <div class="input__container">
+                  <textarea id="message" name="message" rows="4" required placeholder="Какие темы Вы считаете интересными для обсуждения на встречах Forbes Woman Club?"></textarea>
                 </div>
                 <button>Submit</button>
               </form>
