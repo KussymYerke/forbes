@@ -12,10 +12,10 @@ const About = () => {
   return (
     <div>
       <div className="about-section-container">
-        <h1 className="about-heading font-head"  data-aos-once="true">
-          <div data-aos="fade-up" data-aos-delay="0">Forbes <br/></div>
-          <div data-aos="fade-up" data-aos-delay="200">Woman<br/></div> 
-          <div data-aos="fade-up" data-aos-delay="400">Club</div>
+        <h1 className="about-heading font-head">
+          <div data-aos="fade-up" data-aos-delay="0"  data-aos-once="true">Forbes <br/></div>
+          <div data-aos="fade-up" data-aos-delay="200"  data-aos-once="true">Woman<br/></div> 
+          <div data-aos="fade-up" data-aos-delay="400"  data-aos-once="true">Club</div>
         </h1>
         <div className="about-right font-link">
           <p className="about-subheading">Женское   комьюнити,    где   вы   получаете   поддержку    и    возможность    обменяться опытом и идеями как для карьеры, так и для личной жизни.</p>

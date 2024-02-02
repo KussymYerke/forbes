@@ -21,7 +21,9 @@ import { Viewer } from '@react-pdf-viewer/core';
 
 
 const Navbar = () => {
+
   const [openMenu, setOpenMenu] = useState(false);
+
   const menuOptions = [
     {
       text: "MediaKit",
@@ -89,7 +91,7 @@ const Navbar = () => {
         <div className="nav-inner">
             <img className="logo" src={Logo} alt="" />
             <div className="navbar-links-container">
-            <button onClick={() => setShown(true)}>Open modal</button>
+            {/* <button onClick={() => setShown(true)}>Open modal</button> */}
               <a href={File} target="blank">MediaKit</a>
               <a href="#hero">Forbes Woman Club</a>
               <a href="#priveleges">Привилегии</a>
