@@ -29,29 +29,31 @@ export default function Modal() {
               X
             </div>
             <div className="create">
-              <form action="">
-              <label class="custom-field">
-                <input type="text" placeholder="&nbsp;"/>
-                <span class="placeholder">ФИО</span>
-                <span class="error-message" aria-live="polite">&nbsp;</span>
-              </label>
-              <label class="custom-field">
-                <input type="text" placeholder="&nbsp;"/>
-                <span class="placeholder">Ваша должность</span>
-                <span class="error-message" aria-live="polite">&nbsp;</span>
-              </label>
-              <label class="custom-field">
-                <input type="email" placeholder="&nbsp;"/>
-                <span class="placeholder">Enter Email</span>
-                <span class="error-message" aria-live="polite">&nbsp;</span>
-              </label>
-              <label class="custom-field">
-                <input type="number" placeholder="&nbsp;"/>
-                <span class="placeholder">Номерт телефона</span>
-                <span class="error-message" aria-live="polite">&nbsp;</span>
-              </label>
-
-                <button>Отправить</button>
+              <h1 className="create-heading">ОТПРАВИТЬ ЗАЯВКУ</h1>
+              <form id="form">
+                <div class="input__container">
+                  {/* <label for="name">ФИО</label> */}
+                  <input type="text" id="name" name="name" required placeholder="ФИО"/>
+                </div>
+                <div class="input__container">
+                  <input type="email" id="email" name="email" required placeholder="Название компании" />
+                </div>
+                <div class="input__container">
+                  <input type="email" id="email" name="email" required placeholder="Сфера деятельности (чем занимается компания)" />
+                </div>
+                <div class="input__container">
+                  <input type="email" id="email" name="email" required placeholder="Должность" />
+                </div>
+                <div class="input__container">
+                  <input type="email" id="email" name="email" required placeholder="Телефон" />
+                </div>
+                <div class="input__container">
+                  <input type="email" id="email" name="email" required placeholder="Email" />
+                </div>
+                <div class="input__container">
+                  <textarea id="message" name="message" rows="4" required placeholder="Комментарий"></textarea>
+                </div>
+                <button>Submit</button>
               </form>
             </div>
           </div>

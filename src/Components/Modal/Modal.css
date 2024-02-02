@@ -72,9 +72,19 @@ body.active-modal {
     box-sizing: border-box;
     display: block;
 }
+.create-heading{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gray;
+}
 .create input:focus{
-    border: none;
+    outline: none;
     border-bottom: 1px solid black;
+}
+.input__container:first-child{
+    margin-top: 2rem;
+}
+.input__container{
+    margin-bottom: 2rem;
 }
 .create button {
     background: #A41515;
@@ -84,55 +94,44 @@ body.active-modal {
     border-radius: 8px;
     cursor: pointer;
 }
-.custom-field{
-    position: relative;
-    --field-padding: 12px;
-    border-top: 20px solid transparent;
+input::placeholder{
+    font-size: 1rem;
 }
-.custom-field::after {
-    content: attr(aria-label);
+textarea::placeholder{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1rem;
 }
 
-.custom-field input {
-    border: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: #f2f2f2;
-    padding: 12px;
-    border-radius: 3px;
-    width: 250px;
-    font-size: 14px;
-    padding: var(--field-padding);
+input:focus::placeholder {
+    transition: 0.2s all;
+    color: transparent;
 }
-.custom-field .placeholder {
-    position: absolute;
-    left: 12px;
-    bottom: 50%;
-    top: 25px;  
-    transform: translateY(-50%);
-    width: calc(100% - 24px);  
-    color: #aaa;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    left: var(--field-padding);
-    width: calc(100% - (var(--field-padding) * 2));
-    transition: 
-    top 0.3s ease,
-    color 0.3s ease,
-    font-size 0.3s ease;
-  }
-  .custom-field input:focus + .placeholder {
-    top: 10px;
-    font-size: 10px;
-    color: #222;
-  }
 
-  .custom-field input:not(:placeholder-shown) + .placeholder
-.custom-field input:focus + .placeholder {
-  top: -10px;
-  font-size: 10px;
-  color: #222;
+textarea:focus::placeholder {
+    transition: 0.2s all;
+    color: transparent;
+}
+
+@media (max-width: 600px){
+    .create{
+        min-width: 300px;
+    }
+    input::placeholder{
+        font-size: 0.7rem;
+    }
+    textarea::placeholder{
+        font-size: 0.7rem;
+    }
+    .create-heading{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .create{
+        min-width: 200px;
+    }
+    .create-heading{
+        font-size: 1rem;
+    }
 }

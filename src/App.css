@@ -128,7 +128,7 @@ nav {
 .carousel{
   padding-left: 2rem;
   color: #fff;
-  height: 45vh;
+  height: 40vh;
   max-height: 1500px;
   width: 75vw;
 }
@@ -212,7 +212,7 @@ nav {
   background-color: #e48f0f;
 }
 .about-section-container {
-  margin-top: 5rem;
+  margin-top: 3rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -228,6 +228,9 @@ nav {
   line-height: 0.8;
   letter-spacing: -4px;
   /* margin-right: 3.5rem; */
+}
+.about-heading div{
+  margin-bottom: 0.3rem;
 }
 .about-subheading{
   width: 100%;
