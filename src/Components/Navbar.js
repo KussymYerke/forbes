@@ -59,31 +59,6 @@ const Navbar = () => {
 
   const [shown, setShown] = useState(false);
 
-  const modalBody = () => (
-    <div
-        style={{
-            backgroundColor: '#fff',
-
-            /* Fixed position */
-            left: 0,
-            position: 'fixed',
-            top: 0,
-
-            /* Take full size */
-            height: '100%',
-            width: '100%',
-
-            /* Displayed on top of other elements */
-            zIndex: 9999,
-
-            display: 'flex',
-            flexDirection: 'column',
-            overflow: 'hidden',
-        }}
-    >
-        <Viewer fileUrl={File} />
-    </div>
-);
 
   return (
     <nav>
@@ -92,7 +67,7 @@ const Navbar = () => {
             <img className="logo" src={Logo} alt="" />
             <div className="navbar-links-container">
             {/* <button onClick={() => setShown(true)}>Open modal</button> */}
-              <a href={File} target="blank">MediaKit</a>
+              <a href={File} target="_blank">MediaKit</a>
               <a href="#hero">Forbes Woman Club</a>
               <a href="#priveleges">Привилегии</a>
               <a href="#events">Мероприятия</a>
