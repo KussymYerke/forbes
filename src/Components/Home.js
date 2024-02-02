@@ -43,9 +43,9 @@ const Home = () => {
     autpoplaySpeed: 500,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1083,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 3,
           infinite: true,
           dots: false

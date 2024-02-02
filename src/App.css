@@ -12,6 +12,7 @@
 .App {
   background: #EDEDED;
   min-height: 100vh;
+  color: #303030;
 }
 .container{
   width: 90vw;
@@ -87,23 +88,34 @@ nav {
 }
 .navLink{
   text-decoration: none;
-  color: black;
+  color: #303030;
 }
 .navbar-menu-container {
   display: none;
 }
 .right-heading{
   color: #fff;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  font-size: 1.2vw;
 }
 .navbar-links-container a {
-  margin-right: 1.5rem;
+  margin-right: 2rem;
   text-decoration: none;
   color: white;
   font-size: 1rem;
   font-weight: 400;
+}
+.create ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top:2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid;
+}
+.create ul li{
+  list-style: none; 
 }
 .primary-button {
   padding: 0.9rem 1.75rem;
@@ -119,6 +131,10 @@ nav {
 .navbar-cart-icon {
   font-size: 1.15rem;
 }
+.link-text{
+  text-decoration: none;
+  color: #303030;
+}
 .primary-button:hover {
   background-color: rgb(234, 234, 234);
 }
@@ -130,23 +146,23 @@ nav {
   position: relative;
   display: flex;
   padding-top: 1rem;
+  padding-left: 4.5rem;
   background-color: #1B1A1A;
 }
 .carousel{
   padding-left: 2rem;
   color: #fff;
-  height: 40vh;
   max-height: 1500px;
   width: 75vw;
 }
 .right{
   display: flex;
   justify-content: flex-start;
-  margin-left: 1rem;
 }
 .box{
   background: lightgreen;
   width: 23vw !important;
+  margin-bottom: 1.5rem;
 }
 .box h3{
   text-align: center;
@@ -156,13 +172,15 @@ nav {
   margin: 0 0.1rem;
 }
 .slick-next{
-  right: 40px !important;
+  right: 45px !important;
+  top: 40% !important;
   font-size: 46px;
   color: black !important;
 }
 .slick-prev{
   position: relative;
   left: 10px !important;
+  top: 40% !important;
   color: black !important;
   z-index: 10;
 }
@@ -181,8 +199,8 @@ nav {
   padding: 0 10px 10px 13px;
 }
 .journal{
-  width: 170px;
-  height: 200px;
+  width: 10vw;
+  height: 13vw;
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
@@ -229,7 +247,7 @@ nav {
   width: 450px;
 }
 .about-heading{
-  font-size: 8rem;
+  font-size: 7rem;
   font-weight:900 !important;
   width: 50%;
   line-height: 0.8;
@@ -241,7 +259,7 @@ nav {
 }
 .about-subheading{
   width: 100%;
-  color: black;
+  color: #303030;
   font-size: 1.3rem;
   font-weight: 300;
 }
@@ -275,7 +293,7 @@ nav {
   text-align: center;
   margin-bottom: 2.5rem;
   justify-content: center;
-  margin-top: 9.5rem;
+  margin-top: 5.5rem;
 }
 .member-head{
   width: 66%;
@@ -339,9 +357,6 @@ nav {
   text-transform: uppercase;
   transition: all 0.2s;
 }
-
-
-
 .videos{
   margin-top: 5rem;
   display: flex;
@@ -385,6 +400,10 @@ nav {
   font-size: 1.5rem;
   margin-right: 1.25rem;
   color: #585858;
+}
+.footer-lower-group{
+  display: flex;
+  gap: 10rem;
 }
 /* .footer-section-one {
   border: 2px solid blue;
@@ -532,7 +551,7 @@ nav {
   font-weight: bold;
   font-size: 4.375rem;
   text-align: center;
-  color: black;
+  color: #303030;
 }
 .privellege-inner{
   display: flex;
@@ -553,7 +572,7 @@ nav {
 .privellege-bold{
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: #303030;
 }
 .privellege-paragraph{
   width: 20%;
@@ -598,9 +617,10 @@ nav {
   padding: 2rem 3rem;
   border-radius: 3rem;
   text-decoration: none;
+  outline: 1px solid black;
 }
 .event-button:hover{
-  background-color: #CE1B1B;
+  background-color: #B33131;
 }
 .footer{
   background-color: #1B1A1A;
@@ -609,20 +629,20 @@ nav {
 }
 .footer-upper{
   display: flex;
-  gap: 11rem;
+  gap: 14rem;
   padding-top: 8.375rem;
   margin-bottom: 3rem;
 }
 .footer-lower{
   display: flex;
-  gap: 7rem; 
+  justify-content: space-between;
   padding-bottom: 3rem;
 }
 .footer-lower-social{
-  margin-left: 20rem;
   display: flex;
   gap: 1.5rem;
   padding-bottom: 3rem;
+  align-self: flex-end;
 }
 .footer-single li{
   list-style: none;
@@ -646,10 +666,10 @@ nav {
       width: 450px;
   }
   .about-heading{
-    font-size: 8rem;
+    font-size: 6rem;
   }
-  .carousel{
-    height:35vh;
+  .box{
+    margin-bottom: 2rem;
   }
   .video{
     width: 450px;
@@ -659,12 +679,22 @@ nav {
     margin-right: 1.5rem;
     font-size: 0.8rem;
   }
-  .journal{
-    width: 120px;
-    height: 150px;
+  .footer-upper{
+    gap: 14rem;
+  }
+  .footer-lower-social{
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 3rem;
   }
   .right-heading{
-    font-size: 1.05rem;
+    margin-top: 0.2rem;
+    font-size: 1.15vw;
+  }
+  .footer-lower{
+    display: flex;
+    gap: 4rem; 
+    padding-bottom: 3rem;
   }
 }
 
@@ -676,7 +706,6 @@ nav {
   .logo{
     width: 250px;
   }
-
   .slick-next{
     right: 0px !important;
   }
@@ -684,7 +713,7 @@ nav {
     font-size: 23px !important;
   }
   .navbar-links-container a {
-    margin-right: 0.7rem;
+    margin-right: 1.2rem;
     font-size: 0.7rem;
   }
   .content{
@@ -704,16 +733,16 @@ nav {
   }
   .carousel{
     width:70vw;
-    height:25vh;
   }
   .slick-next{
-    right: 40px !important;
+    right: 5.5vw !important;
   }
   .box{
-    width: 20vw !important;
+    width: 30vw !important;
+    margin-bottom: 2rem;
   }
   .about-heading{
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
   .about-right{
     width: 350px;
@@ -722,10 +751,13 @@ nav {
     font-size: 1rem;
   }
   .member-heading{
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
   .member-head{
     font-size: 4.375rem;
+  }
+  .home-banner-container{
+    padding-left: 2.5rem;
   }
   .member{
     font-size: 1rem;
@@ -769,18 +801,15 @@ nav {
     font-size: 2rem;
   }
   .journal{
-    width: 100px;
-    height: 130px;
+    width: 15vw;
+    height: 18vw;
   }
   .right-heading{
-    font-size: 0.8rem;
+    font-size: 1.6vw;
     margin-top: 0.2rem;
   }
   .footer-upper{
-    gap: 18%;
-  }
-  .footer-lower-social{
-    margin-left: 8rem;
+    gap: 14rem;
   }
 }
 
@@ -790,6 +819,10 @@ nav {
   }
   .footer-lower-social{
     margin-left: 0rem;
+  }
+  .navbar-links-container a {
+    margin-right: 1.2rem;
+    font-size: 0.5rem;
   }
 }
 @media (max-width: 800px) {
@@ -805,9 +838,6 @@ nav {
     margin-right: 0.6rem;
     font-size: 0.7rem;
   }
-  .carousel{
-    max-height: 180px;
-  }
   .content-title{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -821,24 +851,26 @@ nav {
       padding: 0.5rem 0.8rem;
   }
   .slick-next{
-    right: 5% !important;
+    right: 5vw !important;
   }
   .slick-next:before{
-    font-size: 15px !important;
-    padding: 3px 10px 10px 10px;
+    font-size: 12px !important;
+    padding: 3px 7px 7px 10px;
+    /* top, right, bottom, left  */
   }
   .slick-prev:before{
-    font-size: 15px !important;
-    padding: 3px 10px 10px 10px;
+    font-size: 12px !important;
+    padding: 3px 8px 7px 9px;
+  /*   */
   }
   .slick-prev{
     left: 10px !important;
   }
   .right, .right-heading{
-    padding-left: 3rem;
+    padding-left: 0rem;
   }
   .right-heading{
-    font-size: 0.8rem;
+    font-size: 1.5vw;
     margin-left: 0;
   }
   .nav-logo-container {
@@ -863,11 +895,8 @@ nav {
     width: 300px;
   }
   .journal{
-    width: 70px;
-    height: 100px;
-  }
-  .right-heading{
-    font-size: 0.5rem;
+    width: 14vw;
+    height: 17vw;
   }
   .right{
     margin-left: 0;
@@ -902,7 +931,10 @@ nav {
     font-size:0.8rem;
   }
   .event-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .event-month, .event-place{
+    font-size: 1.2rem;
   }
   .event-button{
     font-size: 2rem;
@@ -922,34 +954,39 @@ nav {
   }
   .footer-upper{
     font-size:0.8rem;  
+    gap: 13rem
   }
   .footer-lower{
     font-size: 0.8rem;
-    gap: 8rem;
+  }
+  .box{
+    margin-bottom: 1.5rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { 
   .box{
-    width: 27vw !important;
+    width: 32vw !important;
+    margin-bottom: 1rem;
+  }
+  .carousel{
+    padding-left: 0;
   }
   .slick-next{
-    right: 12% !important;
+    right: 4.5vw !important;
   }
   .slick-next:before{
     font-size: 10px !important;
-    padding: 5px 7px 10px 10px;
   }
   .articles{
     max-height: 40px;
   }
   .slick-prev:before{
     font-size: 10px !important;
-    padding: 5px 7px 10px 10px;
   }
   .journal{
-    width: 65px;
-    height: 95px;
+    width: 15vw;
+    height: 18vw;
   }
   .content{
     padding-left: 1rem;
@@ -970,6 +1007,9 @@ nav {
   }
   .navbar-menu-container{
     padding-right: 1rem
+  }
+  .create ul{
+    gap: 0.7rem;
   }
   .member-head{
     font-size: 2.3rem;
@@ -995,10 +1035,12 @@ nav {
     width: 220px;
   }
   .footer-upper{
-    gap: 5rem;
+    gap: 6rem;
+    font-size: 0.6rem;
   }
-  .footer-lower{
-    gap: 2rem;
+  .footer-lower-group{
+    gap: 3.6rem;
+    font-size: 0.6rem;
   }
   .event-heading{
     font-size: 2.5rem;
@@ -1013,17 +1055,14 @@ nav {
   }
   .right-heading{
     margin-top: 0.2rem;
-    font-size: 0.3rem;
+    font-size: 1.65vw;
     margin-left: 0;
   }
   .event-title{
-    font-size: 1.5rem;
-  }
-  .event-month{
     font-size: 1.2rem;
   }
-  .event-place{
-    font-size: 1.2rem;
+  .event-month, .event-place{
+    font-size: 1.0rem;
   }
   .event{
     margin-top: 1rem;
@@ -1060,12 +1099,12 @@ nav {
 }
 
 @media (max-width: 450px){
+  .box{
+    width: 30vw !important;
+  }
   .member{
     font-size: 0.45rem;
     max-width: 120px;
-  }
-  .right, .right-heading{
-    padding-left: 1.5rem;
   }
   .articles{
     max-height: 20px;
@@ -1081,12 +1120,19 @@ nav {
     padding-top: 0;
   }
   .carousel{
-    max-height: 150px;
+    max-height: 100px;
     padding-left: 16px;
   }
+  .slick-prev:before, .slick-next::before{
+    font-size: 6px !important;
+    padding: 5px 7px 7px !important;
+  }
   .journal{
-    width: 50px;
-    height: 80px;
+    width: 15vw;
+    height: 18vw;
+  }
+  .right-heading{
+    font-size: 1.5vw;
   }
   .about-heading{
     font-size: 2.5rem;
@@ -1129,7 +1175,9 @@ nav {
   .privellege-heading, .event-heading, .member-head{
     font-size: 1.4rem;
   }
-
+  .home-banner-container{
+    padding-left: 1.5rem;
+  }
   .privellege-img{
     width: 150px; 
   }
@@ -1154,25 +1202,19 @@ nav {
     font-size: 1.6rem;
   }
   .event-title{
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
-  .right-heading{
-    font-size: 0.35rem;
-    margin-left: 0;
-  }
-  .event-month{
-    font-size: 1rem;
-  }
-  .event-place{
-    font-size: 1rem;
+  .event-month, .event-place{
+    font-size: 0.7rem;
   }
   .event{
     margin-top: 0.7rem;
   }
   .footer-upper{
     font-size: 0.5rem;
+    gap:5rem;  
   }
-  .footer-lower{
+  .footer-lower-group{
     font-size: 0.5rem;
     gap: 3rem;
   }
@@ -1183,15 +1225,18 @@ nav {
 }
 
 @media (max-width: 345px){
+  .about-heading{
+    margin-right: 0;
+  }
+  .about-right{
+    width: 135px;
+  }
+  .navbar-menu-container{
+    margin-right: 0;
+  }
   .video{
     width: 140px;
     height: 110px;
-  }
-  .right-heading{
-    font-size: 0.3rem;
-  }
-  .right, .right-heading{
-    padding-left: 1rem;
   }
   .videos{
     gap: 0.5rem;
@@ -1201,6 +1246,9 @@ nav {
   }
   .footer-lower{
     gap: 3rem;
+  }
+  .carousel{
+    max-height: 80px;
   }
   .member-head{
     font-size: 1.3rem;
@@ -1216,8 +1264,11 @@ nav {
     height: 95%;
   }
   .journal{
-    width: 40px;
-    height: 70px;
+    width: 15vw;
+    height: 18vw;
+  }
+  .right-heading{
+    font-size: 1.5vw;
   }
   .content-title{
     margin-bottom:0px;
@@ -1228,14 +1279,21 @@ nav {
       padding: 0.3rem 0.5rem;
   }
   .footer-upper{
-    font-size: 0.4rem;
+    font-size: 0.5rem;
+    gap:3.5rem;
   }
-  .footer-lower{
-    font-size: 0.4rem;
+  .footer-lower-group{
+    font-size: 0.5rem;
     gap: 1.5rem;
   }
   .social{
     height: 16px;
     width: 16px;
+  }
+  .event-title{
+    font-size: 0.8rem;
+  }
+  .event-month, .event-place{
+    font-size: 0.6rem;
   }
 }

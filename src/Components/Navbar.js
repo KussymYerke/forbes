@@ -13,6 +13,9 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
+import Form from '@mui/icons-material/FormatListBulleted'
+import Events from "@mui/icons-material/Event"
+import Contact from "@mui/icons-material/ContactPage"
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
@@ -26,11 +29,6 @@ const Navbar = () => {
 
   const menuOptions = [
     {
-      text: "MediaKit",
-      icon: <HomeIcon />,
-      id: {File}
-    },
-    {
       text: "Forbes Woman Club",
       icon: <InfoIcon />,
       id: '#hero'
@@ -42,17 +40,17 @@ const Navbar = () => {
     },
     {
       text: "Мероприятия  ",
-      icon: <PhoneRoundedIcon />,
+      icon: <Events />,
       id: '#events',
     },
     {
       text: "Анкета",
-      icon: <ShoppingCartRoundedIcon />,
+      icon: <Form />,
       id: "#form"
     },
     {
       text: "О команде",
-      icon: <ShoppingCartRoundedIcon />,
+      icon: <Contact />,
       id: "#team"
     }
   ];
@@ -86,9 +84,15 @@ const Navbar = () => {
             onKeyDown={() => setOpenMenu(false)}
           >
             <List>
+              <a href={File} className="navLink" target="_blank">
+                <ListItemButton >
+                  <ListItemIcon><HomeIcon/></ListItemIcon>
+                  <ListItemText className="link-text">MediaKit</ListItemText>
+                </ListItemButton>
+              </a>
               {menuOptions.map((item) => (
                 <ListItem key={item.text} disablePadding>
-                  <a className={"navLink"}href={item.id}>
+                  <a className={"navLink"} href={item.id}>
                   <ListItemButton>
                     
                     <ListItemIcon>{item.icon}</ListItemIcon>
