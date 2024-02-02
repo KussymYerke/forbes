@@ -133,7 +133,7 @@ nav {
 .carousel{
   padding-left: 2rem;
   color: #fff;
-  height: 40vh;
+  height: 45vh;
   max-height: 1500px;
   width: 75vw;
 }
@@ -647,7 +647,7 @@ nav {
     font-size: 8rem;
   }
   .carousel{
-    height:25vh;
+    height:30vh;
   }
   .video{
     width: 450px;
