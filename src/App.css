@@ -566,7 +566,7 @@ nav {
   text-align: center;
 }
 .event-heading{
-  font-size: 4.375rem;
+  font-size: 4.375rem;  
   margin-bottom: 4rem;
 }
 .event{
@@ -724,7 +724,7 @@ nav {
     margin-top: 7rem;
   }
   .member-head{
-    font-size: 4rem;
+    font-size: 4.375rem;
   }
   .member{
     font-size: 1rem;
@@ -736,6 +736,12 @@ nav {
     max-width: 600px;
   }
   .privellege-heading{
+    font-size: 3rem;
+  }
+  .event-heading{
+    font-size: 3rem;
+  }
+  .member-head{
     font-size: 3rem;
   }
   .privellege-img{
@@ -873,13 +879,12 @@ nav {
   }
   .member-heading{
     margin-top: 2rem;
-    font-size: 2rem;
   }
   .member{
     font-size: 0.8rem;
     width: 24%;
   }
-  .privellege-heading{
+  .privellege-heading, .event-heading, member-head{
     font-size: 2rem;
   }
   .privellege-inner{
@@ -1058,7 +1063,9 @@ nav {
     font-size: 0.45rem;
     max-width: 120px;
   }
-
+  .right, .right-heading{
+    padding-left: 1.5rem;
+  }
   .articles{
     max-height: 20px;
   }
@@ -1119,9 +1126,10 @@ nav {
   .gallery-img{
     margin-right: 1rem;
   }
-  .privellege-heading{
+  .privellege-heading, .event-heading, .member-head{
     font-size: 1.4rem;
   }
+
   .privellege-img{
     width: 150px; 
   }

@@ -25,14 +25,14 @@ const Footer = () => {
       <ul className="footer-lower-single">
           <li>Руководитель отдела подписки и <br/>распространения журналов</li>
           <li>Светлана Прошина </li>
-          <li>Зsub@forbesmagazine.kz </li>
+          <li>sub@forbesmagazine.kz </li>
           <li>+7 747 318 28 05</li>
         </ul>
         <ul className="footer-lower-single">
           <li>Руководитель отдела продаж </li>
           <li>Юлдуз Саттарова </li>
           <li>adv@forbes.kz</li>
-          <li>zulfiya@forbes.kz</li>
+          <li>+7 707 823 60 40</li>
         </ul>
         <div className="footer-lower-social">
         <a href="https://www.instagram.com/forbes_kz/"><img src={Insta} className="social" alt="insta" /></a>
