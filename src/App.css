@@ -16,6 +16,7 @@
   width: 90vw;
   max-width: 1200px;
   margin: 0rem auto;
+  background: #EDEDED;
 }
 body {
   max-width: 100%;
@@ -586,7 +587,7 @@ nav {
   font-weight: 300;
 }
 .event-club{
-  margin-top: 7rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
 }
 .event-button{
