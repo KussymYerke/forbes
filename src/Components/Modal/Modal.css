@@ -21,7 +21,7 @@ body.active-modal {
     left: 40%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
-    background: #f1f1f1;
+    background: #fff;
     padding: 14px 28px;
     border-radius: 3px;
     max-width: 1200px;
@@ -39,31 +39,6 @@ body.active-modal {
     top: 10px;
     right: 10px;
     padding: 5px 7px;
-}
-
-.company-content{
-    max-width: 330px;
-    margin-bottom: 40px;
-}
-.company-img{
-    display: flex;
-    align-items: flex-start;
-    height: 300px;
-}
-.company-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.company-title{
-    font-size: 1.5rem;
-}
-.company-description{
-    font-size: 1.5rem;
-    text-align: center;
-    width: 80%;
 }
 .modal-lower{
     display: flex;
@@ -92,9 +67,14 @@ body.active-modal {
     width: 100%;
     padding: 6px 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: none;
+    border-bottom: 1px solid #ddd;
     box-sizing: border-box;
     display: block;
+}
+.create input:focus{
+    border: none;
+    border-bottom: 1px solid black;
 }
 .create button {
     background: #A41515;
@@ -103,4 +83,56 @@ body.active-modal {
     padding: 8px;
     border-radius: 8px;
     cursor: pointer;
+}
+.custom-field{
+    position: relative;
+    --field-padding: 12px;
+    border-top: 20px solid transparent;
+}
+.custom-field::after {
+    content: attr(aria-label);
+}
+
+.custom-field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+    padding: var(--field-padding);
+}
+.custom-field .placeholder {
+    position: absolute;
+    left: 12px;
+    bottom: 50%;
+    top: 25px;  
+    transform: translateY(-50%);
+    width: calc(100% - 24px);  
+    color: #aaa;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    left: var(--field-padding);
+    width: calc(100% - (var(--field-padding) * 2));
+    transition: 
+    top 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
+  }
+  .custom-field input:focus + .placeholder {
+    top: 10px;
+    font-size: 10px;
+    color: #222;
+  }
+
+  .custom-field input:not(:placeholder-shown) + .placeholder
+.custom-field input:focus + .placeholder {
+  top: -10px;
+  font-size: 10px;
+  color: #222;
 }

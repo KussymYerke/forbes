@@ -872,10 +872,11 @@ nav {
     gap: 1rem;
   }
   .footer-upper{
-    font-size: 1rem;  
+    font-size:0.8rem;  
   }
   .footer-lower{
-    font-size: 1rem;
+    font-size: 0.8rem;
+    gap: 8rem;
   }
 }
 
@@ -948,7 +949,7 @@ nav {
     gap: 5rem;
   }
   .footer-lower{
-    gap: 5rem;
+    gap: 2rem;
   }
   .event-heading{
     font-size: 2.5rem;
@@ -1109,12 +1110,16 @@ nav {
     margin-top: 0.7rem;
   }
   .footer-upper{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   .footer-lower{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
+    gap: 3rem;
   }
-
+  .social{
+    height: 24px;
+    width: 24px;
+  }
 }
 
 @media (max-width: 345px){
@@ -1155,5 +1160,16 @@ nav {
   .content-button{
       font-size: 0.3rem;
       padding: 0.3rem 0.5rem;
+  }
+  .footer-upper{
+    font-size: 0.4rem;
+  }
+  .footer-lower{
+    font-size: 0.4rem;
+    gap: 1.5rem;
+  }
+  .social{
+    height: 16px;
+    width: 16px;
   }
 }

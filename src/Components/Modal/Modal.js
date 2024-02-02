@@ -30,39 +30,27 @@ export default function Modal() {
             </div>
             <div className="create">
               <form action="">
-                <label>Ваше ФИО (полностью)</label>
-                <input 
-                  type="text"
-                  required 
-                />
-                <label>Почта</label>
-                <input 
-                  type="email"
-                  required 
-                />
-                <label>Номер телефона</label>
-                <input 
-                  type="number"
-                  required 
-                />
-                <label>Дата рождения</label>
-                <input type="date" />
-                <label>Место проживания</label>
-                <select>
-                  <option value="Almaty">Алматы</option>
-                  <option value="Astana">Астана</option>
-                  <option value="Others">Другое</option>
-                </select>
-                <label>Сфера деятельности</label>
-                <input type="text" />
-                <label>Должность</label>
-                <input type="text" />
-                <label>Достижения</label>
-                <input type="text" />
-                <label>Никнейм в социальных сетях (свой/бизнеса)</label>
-                <input type="text" />
-                <label>Какие темы Вы считаете интересными для обсуждения на встречах Forbes Woman Club?</label>
-                <input type="text" />
+              <label class="custom-field">
+                <input type="text" placeholder="&nbsp;"/>
+                <span class="placeholder">ФИО</span>
+                <span class="error-message" aria-live="polite">&nbsp;</span>
+              </label>
+              <label class="custom-field">
+                <input type="text" placeholder="&nbsp;"/>
+                <span class="placeholder">Ваша должность</span>
+                <span class="error-message" aria-live="polite">&nbsp;</span>
+              </label>
+              <label class="custom-field">
+                <input type="email" placeholder="&nbsp;"/>
+                <span class="placeholder">Enter Email</span>
+                <span class="error-message" aria-live="polite">&nbsp;</span>
+              </label>
+              <label class="custom-field">
+                <input type="number" placeholder="&nbsp;"/>
+                <span class="placeholder">Номерт телефона</span>
+                <span class="error-message" aria-live="polite">&nbsp;</span>
+              </label>
+
                 <button>Отправить</button>
               </form>
             </div>
