@@ -179,8 +179,8 @@ nav {
   padding: 0 10px 10px 13px;
 }
 .journal{
-  width: 160px;
-  height: 190px;
+  width: 150px;
+  height: 180px;
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
@@ -617,6 +617,7 @@ nav {
   padding-bottom: 3rem;
 }
 .footer-lower-social{
+  margin-left: 20rem;
   display: flex;
   gap: 1.5rem;
   padding-bottom: 3rem;
@@ -655,6 +656,10 @@ nav {
   .navbar-links-container a {
     margin-right: 1.5rem;
     font-size: 0.8rem;
+  }
+  .journal{
+    width: 110px;
+    height: 130px;
   }
 }
 
@@ -756,11 +761,20 @@ nav {
     width: 100px;
     height: 120px;
   }
+  .footer-upper{
+    gap: 18%;
+  }
+  .footer-lower-social{
+    margin-left: 8rem;
+  }
 }
 
 @media (max-width: 915px){
   .footer-lower{
     flex-wrap: wrap;
+  }
+  .footer-lower-social{
+    margin-left: 0rem;
   }
 }
 @media (max-width: 800px) {
