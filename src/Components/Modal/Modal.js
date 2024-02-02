@@ -30,29 +30,40 @@ export default function Modal() {
             </div>
             <div className="create">
               <h1 className="create-heading">ОТПРАВИТЬ ЗАЯВКУ</h1>
+              <p>Критерии вступления:<br/>
+                - собственники и топ-менеджеры компании с годовым оборотом от 1 млрд тенге;<br/>
+                - социальная активность;<br/>
+                - решение о вступлении в клуб принимается экспертным советом;<br/>
+                - присвоение членства клуба подтверждает наличие именной электронной клубной карты Forbes Woman Club.<br/><br/>
+                Вступительный взнос - 3 000 000 тенге<br/><br/>
+                чтобы присоединиться к Forbes Woman Club, ответьте на все вопросы.
+              </p>
               <form id="form">
                 <div class="input__container">
                   {/* <label for="name">ФИО</label> */}
-                  <input type="text" id="name" name="name" required placeholder="ФИО"/>
+                  <input type="text" id="name" name="name" required placeholder="Ваше ФИО"/>
                 </div>
                 <div class="input__container">
-                  <input type="email" id="email" name="email" required placeholder="Email" />
+                  <input type="email" id="email" name="email" required placeholder="Электронный адрес" />
                 </div>
                 <div class="input__container">
-                  <input type="number" id="email" name="email" required placeholder="Номер телефона" />
+                  <input type="number" id="email" name="email" required placeholder="Телефон" />
                 </div>
                 <div class="input__container">
                   <label>Дата рождения</label>
                   <input type="date" id="email" name="email" required placeholder="Дата рождения" />
                 </div>
                 <div class="input__container">
-                  <input type="text" id="email" name="email" required placeholder="Местро проживания (Город)" />
+                  <input type="text" id="email" name="email" required placeholder="Город проживания" />
                 </div>
                 <div class="input__container">
                   <input type="text" id="email" name="email" required placeholder="Сфера деятельности" />
                 </div>
                 <div class="input__container">
                   <input type="text" id="email" name="email" required placeholder="Должность" />
+                </div>
+                <div class="input__container">
+                  <input type="text" id="email" name="email" required placeholder="Достижения" />
                 </div>
                 <div class="input__container">
                   <input type="text" id="email" name="email" required placeholder="Никнейм в социальных сетях (свой/бизнеса)" />

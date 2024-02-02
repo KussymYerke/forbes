@@ -82,9 +82,12 @@ const Home = () => {
             </Slider>
           </div>
         </div>
-        <div className="right">
-            <img className="journal" src={Journal1}/>
-            <img className="journal" src={Journal2}/>
+        <div>
+            <div className="right">
+              <img className="journal" src={Journal1}/>
+              <img className="journal" src={Journal2}/>
+              </div>
+            <h3 className="right-heading">Архив журналов</h3>
         </div>
       </div>
     </div>

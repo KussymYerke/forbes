@@ -91,6 +91,11 @@ nav {
 .navbar-menu-container {
   display: none;
 }
+.right-heading{
+  color: #fff;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
 .navbar-links-container a {
   margin-right: 1.5rem;
   text-decoration: none;
@@ -800,6 +805,10 @@ nav {
   .slick-prev{
     left: 10px !important;
   }
+  .right-heading{
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
   .nav-logo-container {
     max-width: 140px;
   }
@@ -968,6 +977,11 @@ nav {
   .gallery-img{
     margin-right: 1rem;
   }
+  .right-heading{
+    margin-top: 0.2rem;
+    font-size: 0.6rem;
+    margin-left: 0;
+  }
   .event-title{
     font-size: 1.5rem;
   }
@@ -1105,6 +1119,10 @@ nav {
   }
   .event-title{
     font-size: 1.2rem;
+  }
+  .right-heading{
+    font-size: 0.5rem;
+    margin-left: 0;
   }
   .event-month{
     font-size: 1rem;
