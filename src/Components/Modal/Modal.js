@@ -14,6 +14,26 @@ export default function Modal() {
     document.body.classList.remove('active-modal')
   }
 
+  function Submit(e) {
+    const formEle = document.querySelector("form");
+    e.preventDefault();
+    const formData = new FormData(formEle);
+    fetch(
+      "https://script.google.com/macros/s/AKfycbzKxWCX2Dh-dWgpOx7F8N0zrSPFI01qKoqlyh54WlcUbrsKcT1pKvSHb7AJs-2k3OyG/exec",
+      {
+        method: "POST",
+        body: formData
+      }
+    )
+      .then((res) => res.text())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   return (
 
     <>
@@ -37,40 +57,40 @@ export default function Modal() {
                 <li>- годовой членский взнос - 3 000 000 тенге</li>
                 <li>- членство в клубе подтверждается наличием именной электронной клубной карты Forbes Woman Club</li>
               </ul>
-              <form id="form">
+              <form id="form" onSubmit={(e) => Submit(e)}>
                 <div class="input__container">
                   {/* <label for="name">ФИО</label> */}
-                  <input type="text" id="name" name="name" required placeholder="Ваше ФИО"/>
+                  <input type="text" id="Name" name="Name" required placeholder="Ваше ФИО"/>
                 </div>
                 <div class="input__container">
-                  <input type="email" id="email" name="email" required placeholder="Электронный адрес" />
+                  <input type="email" id="Email" name="Email"  placeholder="Электронный адрес" />
                 </div>
                 <div class="input__container">
-                  <input type="number" id="email" name="email" required placeholder="Телефон" />
+                  <input type="number" id="Phone" name="Phone"  placeholder="Телефон" />
                 </div>
                 <div class="input__container">
                   <label>Дата рождения</label>
-                  <input type="date" id="email" name="email" required placeholder="Дата рождения" />
+                  <input type="date" id="Date" name="Date"  placeholder="Дата рождения" />
                 </div>
                 <div class="input__container">
-                  <input type="text" id="email" name="email" required placeholder="Город проживания" />
+                  <input type="text" id="City" name="City"  placeholder="Город проживания" />
                 </div>
                 <div class="input__container">
-                  <input type="text" id="email" name="email" required placeholder="Сфера деятельности" />
+                  <input type="text" id="Position" name="Position"  placeholder="Сфера деятельности" />
                 </div>
                 <div class="input__container">
-                  <input type="text" id="email" name="email" required placeholder="Должность" />
+                  <input type="text" id="Job" name="Job"  placeholder="Должность" />
                 </div>
                 <div class="input__container">
-                  <input type="text" id="email" name="email" required placeholder="Достижения" />
+                  <input type="text" id="Achievement" name="Achievement"  placeholder="Достижения" />
                 </div>
                 <div class="input__container">
-                  <input type="text" id="email" name="email" required placeholder="Никнейм в социальных сетях (свой/бизнеса)" />
+                  <input type="text" id="Nickname" name="Nickname"  placeholder="Никнейм в социальных сетях (свой/бизнеса)" />
                 </div> 
                 <div class="input__container">
-                  <textarea id="message" name="message" rows="4" required placeholder="Какие темы Вы считаете интересными для обсуждения на встречах Forbes Woman Club?"></textarea>
+                  <textarea id="Comments" name="Comments" rows="4"  placeholder="Какие темы Вы считаете интересными для обсуждения на встречах Forbes Woman Club?"></textarea>
                 </div>
-                <button>Submit</button>
+                <button name="Submit" type="submit">Submit</button>
               </form>
             </div>
           </div>

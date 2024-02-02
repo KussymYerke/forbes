@@ -95,9 +95,8 @@ nav {
 }
 .right-heading{
   color: #fff;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2vw;
+  margin-top: 0.7rem;
+  font-size: 1.1vw;
 }
 .navbar-links-container a {
   margin-right: 2rem;
@@ -145,7 +144,7 @@ nav {
 .home-banner-container {
   position: relative;
   display: flex;
-  padding-top: 1rem;
+  padding-top: 4rem;
   padding-left: 4.5rem;
   background-color: #1B1A1A;
 }
@@ -162,7 +161,7 @@ nav {
 .box{
   background: lightgreen;
   width: 23vw !important;
-  margin-bottom: 1.5rem;
+  margin-bottom: 6rem;
 }
 .box h3{
   text-align: center;
@@ -173,14 +172,14 @@ nav {
 }
 .slick-next{
   right: 45px !important;
-  top: 40% !important;
+  top: 30% !important;
   font-size: 46px;
   color: black !important;
 }
 .slick-prev{
   position: relative;
   left: 10px !important;
-  top: 40% !important;
+  top: 30% !important;
   color: black !important;
   z-index: 10;
 }
@@ -287,16 +286,14 @@ nav {
   margin-top: 2rem;
   display: flex;
 }
-.member-heading{
+.member-head{
   display: flex;
-  font-size: 2.25rem;
+  font-size: 4.375rem;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 2.5rem;
   justify-content: center;
   margin-top: 5.5rem;
-}
-.member-head{
-  width: 66%;
 }
 .member-list{
   display: flex;
@@ -437,8 +434,8 @@ nav {
   text-align: center;
 }
 .social{
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 .testimonial-section-bottom {
   margin: 2rem auto;
@@ -587,6 +584,7 @@ nav {
 }
 .event-heading{
   font-size: 4.375rem;  
+  font-weight: bold;
   margin-bottom: 4rem;
 }
 .event{
@@ -626,11 +624,12 @@ nav {
   background-color: #1B1A1A;
   color: #fff;
   width: 100%;
+  margin-top: 6rem;
 }
 .footer-upper{
   display: flex;
   gap: 14rem;
-  padding-top: 8.375rem;
+  padding-top: 4rem;
   margin-bottom: 3rem;
 }
 .footer-lower{
@@ -643,6 +642,7 @@ nav {
   gap: 1.5rem;
   padding-bottom: 3rem;
   align-self: flex-end;
+  margin-top: 3rem;
 }
 .footer-single li{
   list-style: none;
@@ -669,7 +669,7 @@ nav {
     font-size: 6rem;
   }
   .box{
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
   }
   .video{
     aspect-ratio: 16 / 9;
@@ -688,8 +688,8 @@ nav {
     padding-bottom: 3rem;
   }
   .right-heading{
-    margin-top: 0.2rem;
-    font-size: 1.15vw;
+    margin-top: 0.7rem;
+    font-size: 1.12vw;
   }
   .footer-lower{
     display: flex;
@@ -739,7 +739,7 @@ nav {
   }
   .box{
     width: 30vw !important;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
   .about-heading{
     font-size: 5.5rem;
@@ -750,11 +750,8 @@ nav {
   .about-subheading{
     font-size: 1rem;
   }
-  .member-heading{
-    margin-top: 5rem;
-  }
   .member-head{
-    font-size: 4.375rem;
+    margin-top: 5rem;
   }
   .home-banner-container{
     padding-left: 2.5rem;
@@ -805,8 +802,8 @@ nav {
     height: 18vw;
   }
   .right-heading{
-    font-size: 1.6vw;
-    margin-top: 0.2rem;
+    font-size: 1.65vw;
+    margin-top: 0.1rem;
   }
   .footer-upper{
     gap: 14rem;
@@ -870,8 +867,9 @@ nav {
     padding-left: 0rem;
   }
   .right-heading{
-    font-size: 1.5vw;
+    font-size: 1.55vw;
     margin-left: 0;
+    margin-top: 0.5rem;
   }
   .nav-logo-container {
     max-width: 140px;
@@ -901,21 +899,15 @@ nav {
   .right{
     margin-left: 0;
   }
-  .member-head{
-    font-size: 3rem;
-  }
   .member-wrapper{
     margin-bottom: 4rem;
-  }
-  .member-heading{
-    margin-top: 2rem;
   }
   .member{
     font-size: 0.8rem;
     width: 24%;
   }
-  .privellege-heading, .event-heading, member-head{
-    font-size: 2rem;
+  .privellege-heading, .event-heading, .member-head{
+    font-size: 2.5rem;
   }
   .privellege-inner{
     margin-top:2rem;
@@ -960,14 +952,17 @@ nav {
     font-size: 0.8rem;
   }
   .box{
-    margin-bottom: 1.5rem;
+    margin-bottom: 4.5rem;
   }
 }
 
 @media (max-width: 600px) { 
+  .home-banner-container{
+    padding-top: 3rem;
+  }
   .box{
     width: 32vw !important;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
   .carousel{
     padding-left: 0;
@@ -1012,13 +1007,12 @@ nav {
     gap: 0.7rem;
   }
   .member-head{
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
   .contact-page-wrapper{
     margin-bottom: 0;
   }
   .about-section-container{
-  
     margin-top: 2rem;
     gap: 1rem;
   }
@@ -1034,6 +1028,9 @@ nav {
   .about-right{
     width: 220px;
   }
+  .footer{
+    margin-top: 2rem;
+  }
   .footer-upper{
     gap: 6rem;
     font-size: 0.6rem;
@@ -1043,7 +1040,7 @@ nav {
     font-size: 0.6rem;
   }
   .event-heading{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-bottom: 3rem;
   }
   .article-button{
@@ -1054,7 +1051,7 @@ nav {
     margin-right: 1rem;
   }
   .right-heading{
-    margin-top: 0.2rem;
+    margin-top: 0.35rem;
     font-size: 1.65vw;
     margin-left: 0;
   }
@@ -1078,6 +1075,7 @@ nav {
   .videos{
     justify-content: center;
     gap: 0.2rem;
+    margin-top: 7rem;
   }
   .video{
     aspect-ratio: 16/9;
@@ -1086,6 +1084,9 @@ nav {
   .member{
     font-size: 0.6rem;
     max-width: 150px;
+  }
+  .privellege-heading{
+    font-size: 1.8rem;
   }
   .privellege-img{
     width: 170px;
@@ -1096,11 +1097,16 @@ nav {
   .right{
     margin-left: 0;
   }
+  .social{
+    height: 36px;
+    width: 36px;
+  }
 }
 
 @media (max-width: 450px){
   .box{
     width: 30vw !important;
+    margin-bottom: rem;
   }
   .member{
     font-size: 0.45rem;
@@ -1117,35 +1123,37 @@ nav {
     font-size:1.4rem;
   }
   .home-banner-container{
-    padding-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
   }
   .carousel{
     max-height: 100px;
     padding-left: 16px;
+  }
+  .slick-prev, .slick-next{
+    top: 30% !important;
   }
   .slick-prev:before, .slick-next::before{
     font-size: 6px !important;
     padding: 5px 7px 7px !important;
   }
   .journal{
-    width: 15vw;
-    height: 18vw;
+    width: 14vw;
+    height: 17vw;
   }
   .right-heading{
+    margin-top: 0.3rem;
     font-size: 1.5vw;
   }
   .about-heading{
     font-size: 2.5rem;
     margin-right: 1rem;
   }
-  .member-heading{
+  .member-head{
     margin-bottom: 1rem;
   }
   .member-wrapper{
     margin-bottom: 3rem;
-  }
-  .member-head{
-    font-size: 1.8rem;
   }
   .about-subheading{
     width: 150px;
@@ -1198,9 +1206,6 @@ nav {
   .event-wrapper{
     margin-top: 3rem;
   }
-  .event-heading{
-    font-size: 1.6rem;
-  }
   .event-title{
     font-size: 1.0rem;
   }
@@ -1217,10 +1222,6 @@ nav {
   .footer-lower-group{
     font-size: 0.5rem;
     gap: 3rem;
-  }
-  .social{
-    height: 24px;
-    width: 24px;
   }
 }
 
@@ -1260,7 +1261,7 @@ nav {
     max-height: 80px;
   }
   .member-head{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .gallery-img{
     margin-right: 0.5rem;
@@ -1273,11 +1274,12 @@ nav {
     height: 95%;
   }
   .journal{
-    width: 15vw;
-    height: 18vw;
+    width: 14vw;
+    height: 17vw;
   }
   .right-heading{
     font-size: 1.5vw;
+    margin-top: 0.25rem;
   }
   .content-title{
     margin-bottom:0px;
@@ -1295,14 +1297,19 @@ nav {
     font-size: 0.5rem;
     gap: 1.5rem;
   }
-  .social{
-    height: 16px;
-    width: 16px;
+  .event-heading{
+    font-size: 1.2rem;
+  }
+  .privellege-heading{
+    font-size: 1.2rem;
   }
   .event-title{
     font-size: 0.8rem;
   }
   .event-month, .event-place{
     font-size: 0.6rem;
+  }
+  .slick-prev, .slick-next{
+    top: 25% !important;
   }
 }
