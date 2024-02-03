@@ -23,7 +23,7 @@ const Events = () => {
         <div className="event" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
             <div className="event-title">Forbes Woman Brunches</div>
             <div className="event-details">
-                <div className="event-month">Июль</div>
+                <div className="event-month">Июнь</div>
                 <div className="event-place">г.Алматы, г.Астана</div>
             </div>
         </div>
